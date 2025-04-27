@@ -140,19 +140,14 @@
                 <!-- Project Item 4 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <div class="stacked-images">
                             <img class="img-fluid w-100" src="img/4.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Item 5 -->
-                <div class="project-item">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/5.jpeg" alt="">
                         </div>
                     </div>
                 </div>
+                
+                
                 <!-- Project Item 6 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
@@ -164,19 +159,14 @@
                 <!-- Project Item 7 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <div class="stacked-images">
                             <img class="img-fluid w-100" src="img/7.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Item 8 -->
-                <div class="project-item">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/8.jpeg" alt="">
                         </div>
                     </div>
                 </div>
+                <!-- Project Item 8 -->
+                
                 <!-- Project Item 9 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
@@ -233,11 +223,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Item 16 -->
+                <!-- Project Item 16-29 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <div class="stacked-images">
                             <img class="img-fluid w-100" src="img/16.jpeg" alt="">
+                            <img class="img-fluid w-100" src="img/29.jpeg" alt="">
                         </div>
                     </div>
                 </div>
@@ -267,22 +258,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Item 22 -->
+                <!-- Project Item 22-23 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
+                        <div class="stacked-images">
                             <img class="img-fluid w-100" src="img/22.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Item 23 -->
-                <div class="project-item">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/23.jpeg" alt="">
                         </div>
                     </div>
                 </div>
+                
                 <!-- Project Item 24 -->
                 <div class="project-item">
                     <div class="rounded overflow-hidden">
@@ -323,19 +308,44 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Item 29 -->
-                <div class="project-item">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/29.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </div>
     <!-- Projects End -->
         
+        
+    <!-- Add this style section before the footer -->
+    <style>
+        /* Base styles for project items */
+        .project-item {
+            margin-bottom: 25px;
+        }
+        
+        /* Style for stacked image containers */
+        .stacked-images {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            gap: 10px; /* Space between stacked images */
+        }
+        
+        /* Each image in the stack takes appropriate height */
+        .stacked-images .image-item {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        
+        /* Images maintain aspect ratio but fill container width */
+        .stacked-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Maintains aspect ratio without cropping */
+            display: block;
+        }
+    </style>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

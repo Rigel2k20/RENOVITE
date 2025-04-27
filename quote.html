@@ -119,22 +119,36 @@
                             <h1 class="display-5 mb-4">Devis Gratuit</h1>
                         </div>
                         <p class="mb-5">Obtenez une estimation personnalisée pour votre projet d'aménagement intérieur. Contactez-nous pour discuter de vos besoins et recevoir une proposition détaillée.</p>
-                        <form>
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <input type="text" class="form-control border-0 bg-white py-3 px-4" placeholder="Votre nom" style="height: 60px;">
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="c4daaa26-3d73-4b09-8941-eac729b2350c">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Votre nom</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Votre Email</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control border-0 bg-white py-3 px-4" placeholder="Votre email" style="height: 60px;">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                        <label for="subject">Vote numéro</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control border-0 bg-white py-3 px-4" placeholder="Votre Mobile" style="height: 60px;">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
+                                        <label for="message">Note</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0 bg-white py-3 px-4" rows="5" placeholder="Note spéciale"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Envoyer la demande</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Envoyer le demande</button>
+                                    <div class="submitting" style="display: none;">Transmission...</div>
                                 </div>
                             </div>
                         </form>
