@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>RENOVITE - Carpenter Website Template</title>
+    <title>RENOVITE</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="aménagement intérieur, design d'intérieur, rénovation, second œuvre" name="keywords">
+    <meta content="RENOVITE - Experts en aménagement intérieur et travaux de second œuvre" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -29,7 +29,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-consolidated.css" rel="stylesheet">    
+    
 </head>
 
 <body>
@@ -42,81 +43,73 @@
     <!-- Spinner End -->
 
 
-   <!-- Topbar Start -->
-   <div class="container-fluid bg-light p-0">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            
-            <div class="h-100 d-inline-flex align-items-center py-3">
-                <small class="far fa-clock text-primary me-2"></small>
-                <small>Du lundi au vendredi : 09h00 - 21h00 </small>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 fixed-top" style="z-index: 1030; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <!-- Desktop Topbar -->
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Du lundi au vendredi : 09h00 - 21h00 </small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small><a href="tel:+212699795929" style="color: inherit; text-decoration: none;" class="contact-link">+212 699 795 929</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3 me-6">
+                    <small class="fa fa-envelope text-primary me-2"></small>
+                    <small><a href="mailto:renovite.company@gmail.com" style="color: inherit; text-decoration: none;" class="contact-link">renovite.company@gmail.com</a></small>
+                </div>
             </div>
         </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+212 699 795 929</small>
+        
+        <!-- Mobile Topbar -->
+        <div class="row gx-0 d-flex d-lg-none py-2">
+            <div class="col-12 text-center">
+                <div class="d-inline-flex align-items-center me-3">
+                    <small class="fa fa-phone-alt text-primary me-1"></small>
+                    <small><a href="tel:+212699795929" style="color: inherit; text-decoration: none;" class="contact-link">+212 699 795 929</a></small>
+                </div>
+                <div class="d-inline-flex align-items-center">
+                    <small class="fa fa-envelope text-primary me-1"></small>
+                    <small><a href="mailto:renovite.company@gmail.com" style="color: inherit; text-decoration: none;" class="contact-link">renovite.company@gmail.com</a></small>
+                </div>
             </div>
-            <div class="h-100 d-inline-flex align-items-center py-3 me-6">
-                <small class="fa fa-envelope -alt text-primary me-2"></small>
-                <small>renovite@gmail.com</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top p-0" style="top: 40px; z-index: 1020; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo.jpeg" alt="Logo RENOVITE" style="width: 70px; height: 70px;">
+            <h2 class="m-0 text-primary">RENOVITE</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                <a href="about.html" class="nav-item nav-link">Qui sommes-nous</a>
+                <a href="service.html" class="nav-item nav-link">Nos services</a>
+                <a href="project.html" class="nav-item nav-link">Nos Projets</a>
+                <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
+                <!-- Desktop Quote Button -->
+                <a href="quote.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Demander un devis<i class="fa fa-arrow-right ms-3"></i></a>
                 
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                <!-- Mobile Quote Button -->
+                <a href="quote.html" class="btn btn-primary py-2 px-3 d-lg-none mt-3 mb-3">Devis gratuit<i class="fa fa-arrow-right ms-2"></i></a>
             </div>
-        </div>
-    </div>
-</div>
- <!-- Mobile Topbar -->
- <div class="row gx-0 d-flex d-lg-none py-2">
-    <div class="col-12 text-center">
-        <div class="d-inline-flex align-items-center me-3">
-            <small class="fa fa-phone-alt text-primary me-1"></small>
-            <small><a href="tel:+212699795929" style="color: inherit; text-decoration: none;">+212 699 795 929</a></small>
-        </div>
-        <div class="d-inline-flex align-items-center">
-            <small class="fa fa-envelope text-primary me-1"></small>
-            <small>renovite@gmail.com</small>
-        </div>
-    </div>
-</div>
-</div>
-<!-- Topbar End -->
-
-
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <h2 class="m-0 text-primary">RENOVITE</h2>
-    </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Accueil</a>
-            <a href="about.html" class="nav-item nav-link">Qui sommes-nous</a>
-            <a href="service.html" class="nav-item nav-link">Nos services</a>
-            <a href="project.html" class="nav-item nav-link">Nos Projets</a>
-            <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
-        </div>
-        <a href="quote.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Demander gratuitement un devis<i class="fa fa-arrow-right ms-3"></i></a>
-    </div>
-</nav>
-<!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Service</h1>
             
         </div>
-    </div>
-    <!-- Page Header End -->
+    </nav>
+    <!-- Navbar End -->
+
+  
 
 
     <!-- Service Start -->
@@ -131,7 +124,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-1.png" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Conception d'Espaces</h4>
                             <p>Définition de l'organisation générale et de la fonctionnalité des pièces, en tenant compte des besoins, des contraintes et du style de vie du client. Cela inclut la création de plans d'aménagement, l'étude des flux de circulation et l'optimisation de l'utilisation de l'espace.</p>
                         </div>
@@ -142,7 +135,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-2.jpeg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Planification et Visualisation</h4>
                             <p>Élaboration de plans techniques (plans, coupes, élévations), de rendus 3D photoréalistes et de planches d'ambiance (moodboards) pour illustrer le concept et aider le client à se projeter dans son futur espace.</p>
                         </div>
@@ -153,7 +146,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-3.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Choix des Matériaux et Revêtements</h4>
                             <p>Sélection détaillée des matériaux (bois, pierre, métal, verre, etc.) et des revêtements (sols, murs, plafonds, tissus d'ameublement) en fonction de leurs qualités esthétiques, techniques et environnementales, et en assurant leur cohérence avec l'ensemble du projet.</p>
                         </div>
@@ -164,7 +157,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-4.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Conception d'Éclairage</h4>
                             <p>Planification minutieuse de l'éclairage naturel et artificiel, en tenant compte de son rôle fonctionnel et de son impact sur l'atmosphère et l'ambiance des espaces. Cela comprend le choix des luminaires, la détermination des niveaux d'éclairement et la gestion des sources de lumière.</p>
                         </div>
@@ -175,7 +168,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-5.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Agencement et Mobilier</h4>
                             <p>Choix et disposition réfléchis du mobilier (meubles, rangements, équipements) et des accessoires (luminaires, textiles, objets décoratifs) pour optimiser l'ergonomie, la fonctionnalité et l'esthétique des lieux, en accord avec le style défini.</p>
                         </div>
@@ -186,7 +179,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-6.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Définition de Palette de Couleurs</h4>
                             <p>Création d'une harmonie de couleurs cohérente et significative pour l'espace, en tenant compte de l'impact psychologique des couleurs, de la lumière et des préférences du client, afin de créer une ambiance spécifique.</p>
                         </div>
@@ -197,7 +190,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-7.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Gestion de Projet et Coordination de Travaux</h4>
                             <p>Organisation complète du chantier, planification détaillée des étapes, coordination efficace des différents artisans et intervenants (plombiers, électriciens, peintres, etc.), et suivi rigoureux du budget et du calendrier.</p>
                         </div>
@@ -208,7 +201,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-8.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Suivi de Chantier</h4>
                             <p>Contrôle régulier et méticuleux de la conformité des travaux avec les plans et les spécifications techniques, vérification de la qualité d'exécution et résolution des éventuels problèmes rencontrés sur place.</p>
                         </div>
@@ -219,7 +212,7 @@
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-9.jpg" alt="">
                         </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <div class="p-4 text-center text-primary">
                             <h4 class="mb-3">Conseil Personnalisé</h4>
                             <p>Accompagnement attentif et conseils sur mesure adaptés aux besoins spécifiques du client, à son budget et à ses attentes, tout au long du processus de conception et de réalisation du projet.</p>
                         </div>
@@ -273,88 +266,73 @@
     <!-- Quote End -->
 
 
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-        
 
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>------------------------</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 699 795 929</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>renovite@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <div class="service-links">
-                        <p class="service-item">Conception d'Espaces</p>
-                        <p class="service-item">Planification et Visualisation</p>
-                        <p class="service-item">Choix des Matériaux et Revêtements</p>
-                        <p class="service-item">Conception d'Éclairage</p>
-                        <p class="service-item">Agencement et Mobilier</p>
-                        <p class="service-item">Définition de Palette de Couleurs</p>
-                        <p class="service-item">Gestion de Projet et Coordination de Travaux</p>
-                        <p class="service-item">Suivi de Chantier</p>
-                        <p class="service-item">Conseil Personnalisé</p>
-                    </div>
 
-                    <style>
-                        .service-links {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 8px;
-                        }
-                        
-                        .service-item {
-                            color: #fff;
-                            text-decoration: none;
-                            transition: color 0.3s ease;
-                            cursor: pointer;
-                            margin: 0;
-                            padding: 4px 0;
-                        }
-
-                        .service-item:hover {
-                            color: #055160;
-                        }
-                    </style>
-                </div>
-                
-                
+<!-- Footer Start -->
+<footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light logo">Contact</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li>
+                        <i class="fa fa-phone fa-fw"></i>
+                        <a class="text-light text-decoration-none" href="tel:+212699795929">+212 699 795 929</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-fw"></i>
+                        <a class="text-light text-decoration-none" href="mailto:renovite.company@gmail.com">renovite.company@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Services</h2>
+                <ul class="list-style text-light footer-link-list">
+                    <li><a class="text-light text-decoration-none" href="#">Conception d'Espaces</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Planification et Visualisation</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Choix des Matériaux et Revêtements</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Conception d'Éclairage</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Agencement et Mobilier</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Définition de Palette de Couleurs</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Gestion de Projet et Coordination de Travaux</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Suivi de Chantier</a></li>
+                    <li><a class="text-light text-decoration-none" href="#">Conseil Personnalisé</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Réseaux Sociaux</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=61575626890779"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/renovite2025?igsh=MWJwbmIzYzNrejZ4ZQ=="><i class="fab fa-instagram"></i></a>
+                </ul>
             </div>
         </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">RENOVITE</a>, All Right Reserved.
+                    <div class="col-md-6 text-light text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="text-light border-bottom" href="#">RENOVITE</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</footer>
+<!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <div class="position-fixed navbar-expand-lg mb-4" style="bottom: 30px; right: 30px; z-index: 99;">
-        <a class="btn btn-lg btn-primary btn-lg-square rounded-0 mb-3" aria-label="Chat on WhatsApp" href="https://wa.me/212699795929">
-            <img alt="Chat on WhatsApp" src="img/64px-WhatsApp_icon.png" style="height: 22px; width: 22px;"/>
-        </a>
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0">
-            <i class="bi bi-arrow-up"></i>
-        </a>
-    </div>
+<!-- Contact Buttons for All Devices -->
+<div class="contact-sticky-mobile">
+    <a href="https://wa.me/212699795929" class="mobile-contact-item">
+        <i class="fa fa-phone-alt"></i>
+    </a>
+    <a href="mailto:renovite.company@gmail.com" class="mobile-contact-item">
+        <i class="fa fa-envelope"></i>
+    </a>
+    <a href="quote.html" class="mobile-contact-item">
+        <i class="fa fa-file-alt"></i>
+    </a>
+</div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -369,30 +347,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <style>
-        /* Mobile-specific styles */
-        @media (max-width: 991.98px) {
-          /* Force display of important elements on mobile */
-          .mobile-visible {
-            display: block !important;
-          }
-          
-          /* Adjust text sizes for better mobile display */
-          .carousel-text h1 {
-            font-size: 1.5rem !important;
-            line-height: 1.2;
-          }
-          
-          .carousel-text p {
-            font-size: 0.9rem !important;
-          }
-          
-          /* Add more space for mobile navigation */
-          .navbar-collapse {
-            padding-bottom: 15px;
-          }
-        }
-      </style>
+    
 </body>
 
 </html>
